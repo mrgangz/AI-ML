@@ -1,4 +1,7 @@
 ### COPYRIGHT MITUL @ 2020 MAY 12###
+# This code will take in a oska board in the format of "[www], [--], [-], [-b], [bb-]" where w represents
+# player white, and b represents player black. Any size board may be used, so long as the board maintains 2n -1 rows, 
+# where n is the number of slots of the biggest rows, which must be the top and bottom rows.
 import copy
 
 
@@ -457,9 +460,5 @@ max1 = copy.deepcopy(isMax)    # make sure not to change original
         max2 = not max2
         finalMoves.append(finalBoard)
 
-    # note to future self: to make this work, check if min/maxed from bottom level has parent of next one to create tree
-
-    #for i in stateTree:
-        #for j in i:
-          #  print(j.score)
+ 
 '''
